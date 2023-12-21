@@ -36,7 +36,7 @@ window = display.set_mode((win_height, win_width))
 back = transform.scale(image.load('eed.png'),(700, 700))
 
 player1 = Player('eed.png', 30, 300, 30, 100, 6)
-
+player2 = Player('eed.png', 640, 300, 30, 100, 6 )
 run = True
 game = True
 clock = time.Clock()
@@ -49,6 +49,8 @@ while game == True:
             game = False
     if run:
         player1.update_first()
+        player2.update_second()
         player1.reset()
+        player2.reset()
     display.update()
     clock.tick(fps)
