@@ -80,8 +80,8 @@ run = True
 game = True
 clock = time.Clock()
 FPS = 60
-#
-
+#xsxsaxasxa
+##
 while game == True:
     for e in event.get():
         if e.type == QUIT:
