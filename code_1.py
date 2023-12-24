@@ -65,16 +65,13 @@ player1 = Player('eed.png', 30, 300, 30, 200, 6)
 score1 = 0
 player2 = Player('eed.png', 1190, 300, 30, 200, 6 )
 score2 = 0
-ball = Ball('bbor.png', (win_width/2), (win_height/2), 31, 50, 5)
+ball = Ball('bbor.png', (win_width/2), (win_height/2), 30, 50, 5)
 
 speeds = [(3, 5), (2, 3), (3, 4)]
 ball.x_speed, ball.y_speed = random.choice(speeds)
 
-
-
-
 font.init()
-FONT = font.SysFont('comics sans ms', 20, bold = True)
+font = font.SysFont('comics sans ms', 20, bold = True)
 
 run = True
 game = True
@@ -96,9 +93,9 @@ while game == True:
         player2.reset()
         ball.reset()
         ball.update()
-        score = FONT.render(str(score1) + "  " + str(score2), True, (0, 0, 0))
+        score = font.render(str(score1) + "  " + str(score2), True, (0, 0, 0))
         fps = int(clock.get_fps())
-        fps_text = FONT.render(f"FPS: {fps}", True, (255, 255, 255))
+        fps_text = font.render(f"FPS: {fps}", True, (255, 255, 255))
         window.blit(score, ((win_width/2), (200)))
         window.blit(fps_text, (320, 120))
     display.update()    
