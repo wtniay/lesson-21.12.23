@@ -65,7 +65,7 @@ player1 = Player('eed.png', 30, 300, 30, 200, 6)
 score1 = 0
 player2 = Player('eed.png', 1190, 300, 30, 200, 6 )
 score2 = 0
-ball = Ball('bbor.png', (win_width/2), (win_height/2), 30, 50, 5)
+ball = Ball('bbor.png', (win_width/2), (win_height/2), 31, 50, 5)
 
 speeds = [(3, 5), (2, 3), (3, 4)]
 ball.x_speed, ball.y_speed = random.choice(speeds)
@@ -81,7 +81,9 @@ game = True
 clock = time.Clock()
 FPS = 60
 #xsxsaxasxa
-##
+##hnygnygnygjnuyjukiljkjkiljljljl
+
+
 while game == True:
     for e in event.get():
         if e.type == QUIT:
